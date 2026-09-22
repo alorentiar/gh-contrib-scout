@@ -1,5 +1,10 @@
 # gh-contrib-scout
 
+[![PyPI](https://img.shields.io/pypi/v/gh-contrib-scout.svg)](https://pypi.org/project/gh-contrib-scout/)
+[![Python versions](https://img.shields.io/pypi/pyversions/gh-contrib-scout.svg)](https://pypi.org/project/gh-contrib-scout/)
+[![CI](https://github.com/alorentiar/gh-contrib-scout/actions/workflows/ci.yml/badge.svg)](https://github.com/alorentiar/gh-contrib-scout/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Find open source issues that are **actually worth your time**.
 
 Searching `label:"good first issue"` on GitHub returns a lot of noise: tickets
@@ -49,6 +54,14 @@ fewer than 30 stars, or has not been pushed in 45 days.
 
 ## Install
 
+From PyPI:
+
+```bash
+pip install gh-contrib-scout
+```
+
+From a clone, if you want to hack on it:
+
 ```bash
 git clone https://github.com/alorentiar/gh-contrib-scout
 cd gh-contrib-scout
@@ -56,7 +69,7 @@ python -m venv .venv && . .venv/bin/activate
 pip install -e .
 ```
 
-Without installing:
+Without installing at all:
 
 ```bash
 python -m gh_contrib_scout find go
